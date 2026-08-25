@@ -1,0 +1,93 @@
+:root {}
+
+ul,
+li,
+a {
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0;
+    color: black;
+}
+
+body {
+    overflow: hidden;
+}
+
+.overlay-menu-pausa {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    z-index: 1500;
+}
+
+.mandala-img {
+    display: none;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+nav.menu-pausa {
+    position: fixed;
+    display: none;
+    z-index: 2000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+nav.menu-pausa h2 {
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+nav.menu-pausa ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    gap: 16px;
+
+}
+
+nav.menu-pausa li {
+    display: flex;
+    align-items: center;
+    align-self: stretch;
+}
+
+nav.menu-pausa a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: #5E4028;
+    background-color: #EAC154;
+    width: stretch;
+    padding: 10px 30px;
+    transition: transform 0.2s ease;
+}
+
+nav.menu-pausa svg path {
+    fill: currentColor;
+}
+
+nav.menu-pausa a:hover,
+nav.menu-pausa a:active {
+    background-color: #EA8319;
+    color: white;
+    transform: scale(1.05);
+}
+
+nav.menu-pausa svg {
+    width: 24px;
+    height: 24px;
+}
