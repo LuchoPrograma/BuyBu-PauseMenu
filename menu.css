@@ -94,3 +94,37 @@ nav.menu-pausa svg {
     width: 24px;
     height: 24px;
 }
+
+/* ==========================================
+   RESPONSIVE GAME UI SCALING
+   ========================================== */
+nav.menu-pausa,
+.settings-menu {
+    transform-origin: center center;
+}
+
+@media (max-height: 680px),
+(max-width: 1000px) {
+
+    nav.menu-pausa,
+    .settings-menu {
+        transform: translate(-50%, -50%) scale(0.82) !important;
+    }
+}
+
+@media (min-width: 1500px) or (min-height: 920px) {
+
+    nav.menu-pausa,
+    .settings-menu {
+        transform: translate(-50%, -50%) scale(1.25) !important;
+    }
+}
+
+
+@media (min-width: 2000px) or (min-height: 1200px) {
+
+    nav.menu-pausa,
+    .settings-menu {
+        transform: translate(-50%, -50%) scale(1.5) !important;
+    }
+}
