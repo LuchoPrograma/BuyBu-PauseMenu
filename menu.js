@@ -26,15 +26,22 @@ continuarBtn.addEventListener('click', () => {
 
 document.addEventListener('keydown', (event) => {
     if (event.key === 'Escape') {
-        const isHidden = getComputedStyle(menuPausa).display === 'none'
+        const isSettingsOpen = getComputedStyle(settingsMenu).display !== 'none'
+        const isPauseOpen = getComputedStyle(menuPausa).display !== 'none'
 
-        if (isHidden) {
+        if (isSettingsOpen) {
+            // Go back to pause menu if in settings
+            settingsMenu.style.display = 'none'
             menuPausa.style.display = 'flex'
             overlay.style.display = 'block'
-        } else {
+        } else if (isPauseOpen) {
+            // Resume game if in pause menu
             menuPausa.style.display = 'none'
-            settingsMenu.style.display = 'none'
             overlay.style.display = 'none'
+        } else {
+            // Pause game if playing
+            menuPausa.style.display = 'flex'
+            overlay.style.display = 'block'
         }
     }
 })

@@ -6,7 +6,8 @@ a {
     text-decoration: none;
     list-style-type: none;
     padding: 0;
-    color: black;
+    color: #5E4028;
+    font-family: 'Open Sans', sans-serif;
 }
 
 body {
@@ -76,9 +77,11 @@ nav.menu-pausa a {
     transition: transform 0.2s ease;
 }
 
-nav.menu-pausa svg path {
+svg path {
     fill: currentColor;
 }
+
+
 
 nav.menu-pausa a:hover,
 nav.menu-pausa a:active {
