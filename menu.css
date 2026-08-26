@@ -25,15 +25,19 @@ body {
 }
 
 .mandala-img {
-    display: none;
-    object-fit: cover;
+    display: block;
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
     object-position: center;
+    filter: drop-shadow(0 4px 15px rgba(0, 0, 0, 0.4));
+    user-select: none;
 }
 
 
 nav.menu-pausa {
     position: fixed;
-    display: none;
+    display: flex;
     z-index: 2000;
     top: 50%;
     left: 50%;
@@ -48,6 +52,7 @@ nav.menu-pausa h2 {
     color: white;
     text-align: center;
     width: 100%;
+    margin-top: 0;
 }
 
 nav.menu-pausa ul {
@@ -85,9 +90,10 @@ svg path {
 
 nav.menu-pausa a:hover,
 nav.menu-pausa a:active {
-    background-color: #EA8319;
+    background-color: #e17a13;
     color: white;
     transform: scale(1.05);
+
 }
 
 nav.menu-pausa svg {

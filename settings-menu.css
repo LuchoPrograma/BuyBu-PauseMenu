@@ -106,7 +106,7 @@
 
     /* 👈 Outer border color */
     box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.15);
-    transition: transform 0.3s ease;
+    transition: transform 0.15s ease;
 }
 
 /* Inner tab fill using ::before pseudo-element */
